@@ -88,6 +88,18 @@ def isBoardFull(board):
     else:
         return True
 
+
+def winnerScore():
+    points = 0
+    pointz = 0
+    if isWinner(board, 'O'):
+        points = points + 1
+        print(points)
+    else:
+        pointz = pointz + 1
+        print(pointz)
+
+
 def main():
     print('Welcome to Tic Tac Toe!')
     printBoard(board)
@@ -121,5 +133,8 @@ while True:
         board = [' ' for x in range(10)]
         print('-----------------------------------')
         main()
+        winnerScore()
     else:
         break
+
+
