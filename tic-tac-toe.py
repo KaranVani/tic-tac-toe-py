@@ -1,5 +1,7 @@
 board = [' ' for x in range(10)]
 
+
+
 def insertLetter(letter, pos):
     board[pos] = letter
 
@@ -90,14 +92,14 @@ def isBoardFull(board):
 
 
 def winnerScore():
-    points = 0
-    pointz = 0
     if isWinner(board, 'O'):
         points = points + 1
-        print(points)
+        print("you have ", points, " points")
+        return points
     else:
         pointz = pointz + 1
-        print(pointz)
+        print("You have ", points, " points")
+        return pointz
 
 
 def main():
